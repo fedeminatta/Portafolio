@@ -1,4 +1,10 @@
-const check = document.getElementById('check');
-check.addEventListener('change', ()=>{
-    document.body.classList.toggle('dark');
-  })
+// agregar modo oscuro
+
+// Carruzel
+document.addEventListener('DOMContentLoaded', () => {
+    const elementosCarousel = document.querySelectorAll('.carousel');
+    M.Carousel.init(elementosCarousel, {
+        duration: 150,
+        indicators: true,
+    });
+});
