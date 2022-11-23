@@ -252,7 +252,7 @@ footer .contacto .formulario textarea {
   max-height: 300px;
   margin-bottom: 15px;
 }
-footer .contacto .formulario .boton {
+footer .contacto .formulario button.boton {
   margin: auto;
   background: #3895ea;
   color: #fff;
@@ -261,7 +261,7 @@ footer .contacto .formulario .boton {
   padding: 15px 40px;
   cursor: pointer;
 }
-footer .contacto .formulario .boton:hover {
+footer .contacto .formulario button.boton:hover {
   background: #387bea;
 }
 footer .redes-sociales {

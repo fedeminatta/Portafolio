@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="carousel.css" />
         <link rel="stylesheet" href="normalize.css" />
         <link rel="stylesheet" href="./css/all.min.css" />
-        <link rel="stylesheet" href="estilos.css" />
+        <link rel="stylesheet" href="estilos.min.css" />
         <title>Portafolio</title>
     </head>
     <body>
@@ -160,11 +160,11 @@
             <section class="contacto">
                 <div class="contenedor">
                     <h3 class="titulo" id="contacto">Contacto</h3>
-                    <form class="formulario" action="">
-                        <input type="text" placeholder="Nombre" name="nombre" required />
-                        <input type="email" placeholder="Correo" name="correo" required />
-                        <textarea name="mensaje" placeholder="Mensaje"></textarea>
-                        <input class="boton" type="submit" value="Enviar" />
+                    <form class="formulario" action="" id="form" netlify>
+                        <input type="text" placeholder="Nombre" name="name" required />
+                        <input type="email" placeholder="Correo" name="email" required />
+                        <textarea name="message" placeholder="Mensaje"></textarea required>
+                        <button class="boton" type="submit">Enviar</button>
                     </form>
                 </div>
             </section>
