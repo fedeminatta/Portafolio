@@ -295,14 +295,8 @@ footer .redes-sociales a:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-footer .redes-sociales .twitter:hover {
-  background: #1da1f2;
-}
 footer .redes-sociales .instagram:hover {
   background: #f2186c;
-}
-footer .redes-sociales .youtube:hover {
-  background: #ff0000;
 }
 footer .redes-sociales .github:hover {
   background: #ffd43b;
