@@ -14,6 +14,7 @@
     <meta name="autor" content="Federico Minatta">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome.min.css">
     <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="./css/all.min.css">
@@ -22,6 +23,7 @@
 </head>
 
 <body>
+    <i class="fa fa-sun-o" aria-hidden="true"></i>
     <header>
         <div class="contenedor">
             <nav class="menu">
@@ -166,13 +168,16 @@
 
     <footer>
         <section class="contacto">
-            <div class="contenedor">
+            <div class="enviado">
+                <p>Correo enviado correctamente</p>
+            </div>
+            <div class="contenedor contenedor-form">
                 <h3 class="titulo" id="contacto">Contacto</h3>
                 <form class="formulario" action="" id="form" netlify>
                     <input type="text" placeholder="Nombre" name="name" required>
                     <input type="email" placeholder="Correo" name="email" required>
                     <textarea name="message" placeholder="Mensaje" required></textarea>
-                    <button class="boton" type="submit">Enviar</button>
+                    <button class="boton" type="submit" id="btn-form">Enviar</button>
                 </form>
             </div>
         </section>
@@ -188,6 +193,7 @@
             </div>
         </div>
     </footer>
+
 
     <script src="materialize.min.js"></script>
     <script src="script.js"></script>
