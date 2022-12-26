@@ -1,3 +1,10 @@
+:root {
+  --bg-primary: #f7f7ee;
+  --bg-secundary: #ece9e1;
+  --bg-input: #eeece6;
+  --text: #fff;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,7 +15,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: var(--bg-primary);
   font-family: "Open Sans", Sans-Serif;
   font-size: 16px;
 }
@@ -76,7 +83,7 @@ header {
 }
 .a a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   border-bottom: 2px solid transparent;
   padding-bottom: 9px;
   font-size: 1em;
@@ -143,6 +150,7 @@ header .contenedor-texto .texto h2 {
 .main .acerca-de .foto img:hover {
   -webkit-transform: translate(0, 20px);
           transform: translate(0, 20px);
+  border: 6px solid rgba(0, 0, 0, 0.5411764706);
 }
 .main .acerca-de .texto .habilidades {
   font-size: 34px;
@@ -157,7 +165,9 @@ header .contenedor-texto .texto h2 {
   text-decoration: underline;
 }
 .main .trabajos {
-  background: #f2f2f2;
+  background: var(--bg-secundary);
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
   padding: 0 0 60px 0;
 }
 .main .trabajos .contenedor {
@@ -168,7 +178,7 @@ header .contenedor-texto .texto h2 {
   line-height: 34px;
   margin: 80px;
   font-weight: 600;
-  color: #323068;
+  color: #3895ea;
   text-align: center;
 }
 .main .trabajos .contenedor-trabajos {
@@ -224,6 +234,9 @@ header .contenedor-texto .texto h2 {
 
 footer .contacto {
   padding: 60px 0;
+  background: var(--bg-primary);
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
 }
 footer .contacto .titulo {
   font-size: 34px;
@@ -265,7 +278,7 @@ footer .contacto .formulario button.boton:hover {
   background: #387bea;
 }
 footer .redes-sociales {
-  background: #1e2b38;
+  background: #0b1824;
   padding: 60px 0;
 }
 footer .redes-sociales .contenedor {
@@ -314,6 +327,7 @@ footer .contacto .formulario input[type=text],
 footer .contacto .formulario input[type=email],
 footer .contacto .formulario textarea {
   border: 2px solid #cecece;
+  background: var(--bg-input);
   border-radius: 5px;
   padding: 15px 20px;
   font-size: 20px;
@@ -375,7 +389,7 @@ footer .contacto .formulario input[type=email] {
   overflow: hidden;
 }
 
-.fa-sun-o {
+#dark {
   color: #000;
   position: fixed;
   bottom: 10px;
@@ -383,6 +397,6 @@ footer .contacto .formulario input[type=email] {
   z-index: 1000;
   font-size: 22px;
 }
-.fa-sun-o:hover {
+#dark:hover {
   color: #37981e;
 }/*# sourceMappingURL=estilos.css.map */
