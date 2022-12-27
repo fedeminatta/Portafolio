@@ -34,14 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
 // validar formulario
 const form = document.querySelector('#form');
 const enviado = document.querySelector('.enviado');
-form.addEventListener('submit', (e) => {
-	e.preventDefault();
-	enviado.style.left = '0';
-	setTimeout(() => {
-		enviado.style.left = '-1000px';
-	}, 3000);
-	form.reset();
-});
+// form.addEventListener('submit', (e) => {
+// 	e.preventDefault();
+// 	enviado.style.left = '0';
+// 	setTimeout(() => {
+// 		enviado.style.left = '-1000px';
+// 	}, 3000);
+// 	form.reset();
+// });
 
 // deshabilitar scroll
 function disableScroll() {
