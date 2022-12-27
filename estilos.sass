@@ -3,6 +3,8 @@
 	--bg-secundary: #ece9e1
 	--bg-input: #eeece6
 	--text: #fff
+	--text-s: #000
+	--text-categoria: #636363
 html
 	scroll-behavior: smooth
 *
@@ -161,7 +163,7 @@ header .contenedor-texto .texto h2
 						margin-bottom: 10px
 					.categoria
 						font-size: 14px
-						color: #636363
+						color: var(--text-categoria)
 footer
 	.contacto
 		padding: 60px 0
@@ -236,7 +238,7 @@ footer .contacto .formulario textarea
 	border-radius: 5px
 	padding: 15px 20px
 	font-size: 20px
-	color: #a4a4a4
+	color: #000000
 	outline: none
 footer .contacto .formulario input[type="text"]:focus,
 footer .contacto .formulario input[type="email"]:focus,
@@ -296,3 +298,34 @@ footer .contacto .formulario input[type="email"]
 	font-size: 22px
 	&:hover
 		color: #37981e
+
+#info-user
+	border-radius: 4px
+	padding: 22px
+	background: var(--bg-primary)
+	width: 700px
+	max-width: 70%
+	min-width: 250px
+	position: fixed
+	top: -1000px
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 100000
+	transition: top .8s cubic-bezier(0.22, 0.61, 0.36, 1)
+	color: var(--text-s)
+	div
+		display: flex
+		align-content: center
+		flex-flow: row grap
+		justify-content: center
+		img
+			width: 200px
+			height: 200px
+			border-radius: 5px
+	i
+		position: absolute
+		top: 5px
+		right: 5px
+		font-size: 22px
+		cursor: pointer
+		color: var(--text-s)
