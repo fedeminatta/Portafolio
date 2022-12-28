@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap");
 :root {
   --bg-primary: #f7f7ee;
   --bg-secundary: #ece9e1;
@@ -48,13 +49,12 @@ header {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row warp;
-          flex-flow: row warp;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background: rgba(0, 0, 0, 0.462745098);
   padding: 10px 0;
-  border-radius: 4px;
   -webkit-box-shadow: none;
           box-shadow: none;
   position: fixed;
@@ -461,4 +461,11 @@ footer .contacto .formulario input[type=email] {
   font-size: 22px;
   cursor: pointer;
   color: var(--text-s);
+}
+#info-user h3 {
+  font-family: "Poppins" sans-serif;
+  font-style: italic;
+}
+#info-user p {
+  font-family: "Poppins" sans-serif;
 }/*# sourceMappingURL=estilos.css.map */
