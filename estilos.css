@@ -393,6 +393,18 @@ footer .contacto .formulario input[type=email] {
   overflow: hidden;
 }
 
+.fa-chevron-up {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  color: var(--text-s);
+  z-index: 1000;
+  font-size: 27px;
+}
+.fa-chevron-up:hover {
+  color: #ebcc1c;
+}
+
 #dark {
   color: var(--text-s);
   position: fixed;

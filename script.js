@@ -77,3 +77,9 @@ function quitarModal() {
 	infoUser.style.top = '-1000px';
 	enableScroll();
 }
+
+// ir para arriba
+const up = document.querySelector('#up');
+up.addEventListener('click', () => {
+	scrollTo(0, 0);
+});
