@@ -1,6 +1,7 @@
 // agregar modo oscuro
 const dark = document.querySelector('#dark');
 const rootStyle = document.documentElement.style;
+const habilidades = document.querySelector('.habilidades');
 dark.addEventListener('click', darkMode);
 function darkMode() {
 	if (dark.classList.contains('fa-moon-o')) {
@@ -11,6 +12,7 @@ function darkMode() {
 		rootStyle.setProperty('--text', '#fff');
 		rootStyle.setProperty('--text-s', '#fff');
 		rootStyle.setProperty('--text-categoria', '#fff');
+		habilidades.style.color = '#ebcc1c';
 	} else if (dark.classList.contains('fa-sun-o')) {
 		dark.classList.remove('fa-sun-o');
 		dark.classList.add('fa-moon-o');
@@ -19,6 +21,7 @@ function darkMode() {
 		rootStyle.setProperty('--text', '#000');
 		rootStyle.setProperty('--text-s', '#000');
 		rootStyle.setProperty('--text-categoria', '#636363');
+		habilidades.style.color = '#dd820d';
 	}
 }
 
@@ -30,18 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		indicators: true,
 	});
 });
-
-// validar formulario
-const form = document.querySelector('#form');
-const enviado = document.querySelector('.enviado');
-// form.addEventListener('submit', (e) => {
-// 	e.preventDefault();
-// 	enviado.style.left = '0';
-// 	setTimeout(() => {
-// 		enviado.style.left = '-1000px';
-// 	}, 3000);
-// 	form.reset();
-// });
 
 // deshabilitar scroll
 function disableScroll() {
@@ -62,6 +53,14 @@ const fotoUser = document.querySelector('#foto-user');
 const infoUser = document.querySelector('#info-user');
 const header = document.querySelector('header');
 const close = document.querySelector('#close');
+const acercaDeMi = document.querySelector('#acerca-de-mi');
+
+acercaDeMi.addEventListener('click', () => {
+	infoUser.style.top = '50%';
+	scrollTo(0, 0);
+	disableScroll();
+});
+
 fotoUser.addEventListener('click', () => {
 	infoUser.style.top = '50%';
 	scrollTo(0, 0);
@@ -70,7 +69,7 @@ fotoUser.addEventListener('click', () => {
 	}, 400);
 });
 
-header.addEventListener('click', quitarModal);
+// header.addEventListener('click', quitarModal);
 close.addEventListener('click', quitarModal);
 
 function quitarModal() {

@@ -23,6 +23,7 @@ body
 header
 	background: url(img/bg.jpg) #623f1c
 	background-repeat: no-repeat
+	background-size: cover
 	background-position: center
 	background-attachment: fixed
 	max-height: 600px
@@ -31,18 +32,11 @@ header
 	display: flex
 	flex-flow: row warp
 	justify-content: space-around
-	background: none
+	background: #00000076
+	padding: 10px 0
+	border-radius: 4px
 	box-shadow: none
 
-.carousel
-	.indicators
-		.indicator-item
-			border-radius: 0
-			transform: rotate(45deg)
-			margin: 0 15px
-			background: #36221c
-		.indicator-item.active
-			background: #d68f48
 .a
 	position: relative
 	&:before
@@ -53,7 +47,7 @@ header
 		position: absolute
 		bottom: -2px
 		right: 50%
-		background: #fff
+		background: #ebcc1c
 		transition: all .3s
 	&:hover:before
 		width: 100%
@@ -64,6 +58,16 @@ header
 		border-bottom: 2px solid transparent
 		padding-bottom: 9px
 		font-size: 1em
+
+.carousel
+	.indicators
+		.indicator-item
+			border-radius: 0
+			transform: rotate(45deg)
+			margin: 0 15px
+			background: #36221c
+		.indicator-item.active
+			background: #d68f48
 
 .contenedor-texto
 	display: flex
@@ -274,19 +278,6 @@ footer .contacto .formulario input[type="email"]
 			.contenedor
 				flex-wrap: wrap
 				padding: 20px 0
-.enviado
-	text-align: center
-	display: block
-	position: relative
-	left: -1000px
-	transition: all 1s
-	p
-		color: #ffffff
-		font-family: 'open sans' sans-serif
-		background: #12b031
-		padding: 8px
-		display: inline
-		border-radius: 3px
 
 .contenedor-form
 	overflow: hidden
@@ -300,6 +291,7 @@ footer .contacto .formulario input[type="email"]
 	font-size: 27px
 	&:hover
 		color: #ebcc1c
+		cursor: pointer
 
 #dark
 	color: var(--text-s)
@@ -310,6 +302,7 @@ footer .contacto .formulario input[type="email"]
 	font-size: 27px
 	&:hover
 		color: #ebcc1c
+		cursor: pointer
 
 #info-user
 	border-radius: 4px
@@ -341,11 +334,3 @@ footer .contacto .formulario input[type="email"]
 		font-size: 22px
 		cursor: pointer
 		color: var(--text-s)
-#arrow
-	width: 80px
-	height: auto
-	z-index: 1000
-	position: absolute
-	left: 30%
-	transform: translateX(-90px)
-	transform: translateY(80px)
