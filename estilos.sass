@@ -326,10 +326,14 @@ footer .contacto .formulario input[type="email"]
 		align-content: center
 		flex-flow: row grap
 		justify-content: center
+		overflow: hidden
 		img
+			border-radius: 5px
 			width: 200px
 			height: 200px
-			border-radius: 5px
+			transition: transform .3s
+			&:hover
+				transform: scale(1.1)
 	i
 		position: absolute
 		top: 5px

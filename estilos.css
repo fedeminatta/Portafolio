@@ -439,11 +439,20 @@ footer .contacto .formulario input[type=email] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 #info-user div img {
+  border-radius: 5px;
   width: 200px;
   height: 200px;
-  border-radius: 5px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+#info-user div img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 #info-user i {
   position: absolute;
